@@ -1,2 +1,2 @@
-# benedictoboseke.github.io
+# Hello
 Personal website, technically first personal project
