@@ -1,12 +1,16 @@
 body{
     margin: 0;
     padding: 0;
+	background-color: #050c18;
+	/* border: red 1px solid; */
 }
 
 header {
-	background-color: #414141;
+	font-family: 'Montserrat Alternates', sans-serif;
 	color: white;
 	padding: 20px;
+	/* padding-left: 50px; */
+	text-align: center;
 }
 
 h1 {
@@ -36,12 +40,14 @@ nav a {
 }
 
 main {
-	width: 80%;
+	font-family: 'Montserrat', sans-serif;
+	/* border: red 1px solid; */
 	margin: auto;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: 80vh;
 	text-align: center;
+	color: white;
 }
