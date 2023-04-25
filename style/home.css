@@ -7,6 +7,7 @@ body {
 	/* border: red 1px solid; */
 }
 
+
 header {
 	font-family: 'Montserrat Alternates', sans-serif;
 	color: white;
@@ -15,8 +16,12 @@ header {
 	text-align: center;
 }
 
-h1 {
+h1{
 	margin: 0;
+}
+
+h3{
+	margin: 10px;
 }
 
 nav ul {
@@ -43,23 +48,34 @@ nav a {
 
 main {
 	font-family: 'Montserrat', sans-serif;
-	/* border: red 1px solid; */
-	margin: auto;
-	padding: 20px;
 	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	height: 80vh;
+	align-content: center;
+	/* border: red 1px solid; */
 	text-align: center;
+	margin: auto;
+	padding: 20px;
+	height: 80vh;
 	color: white;
 }
 
-.content{
-	animation: transitionIn 0.75s;
+.socials{
+	/* border: red 1px solid; */
+	padding: 0;
+}
+.nav-content{
+	animation: transitionIn 0.50s;
 }
 
-.nav-content{
-	animation: transitionIn 0.30s;
+.content{
+	animation: transitionIn 0.7s;
+}
+
+.socials{
+	animation: transitionIn2 0.9s;
 }
 
 span.holder-content.first, span.holder-content.second {
@@ -85,9 +101,26 @@ span.holder-content.third{
 }
 
 @keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: translateY(-15%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes transitionIn2 {
 	0% {
 		opacity: 0;
-		transform: translateY(-40%);
+		transform: translateY(-50%);
+	}
+
+	50%{
+		opacity: 0;
+		transform: translateY(-25%);
 	}
 
 	100% {
