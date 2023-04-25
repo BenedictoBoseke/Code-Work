@@ -1,7 +1,9 @@
-body{
-    margin: 0;
-    padding: 0;
-	background-color: #050c18;
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to right, #000B18, #00172D, #00264D, #02386E);
+	background-size: 800% 800%;
+	animation: gradient 18s ease-in-out infinite;
 	/* border: red 1px solid; */
 }
 
@@ -33,7 +35,7 @@ nav li:last-child {
 }
 
 nav a {
-	color: white;
+	color: #A5D7E8;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 18px;
@@ -50,4 +52,46 @@ main {
 	height: 80vh;
 	text-align: center;
 	color: white;
+}
+
+.content{
+	animation: transitionIn 0.75s;
+}
+
+.nav-content{
+	animation: transitionIn 0.30s;
+}
+
+span.holder-content.first, span.holder-content.second {
+	color: #A5D7E8;
+}
+
+span.holder-content.third{
+	color: #c5eefc
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes transitionIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-40%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
