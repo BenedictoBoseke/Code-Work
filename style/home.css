@@ -61,16 +61,13 @@ nav a {
 
 .socials{
 	/* border: red 1px solid; */
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+	text-align: justify;
 }
 
 .fa-brands{
 	padding-top: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .nav-content{
